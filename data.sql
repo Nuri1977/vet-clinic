@@ -22,8 +22,9 @@ SELECT * FROM animals;
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE species = '';
+SELECT species FROM animals;
 COMMIT;
-SELECT * FROM animals;
+SELECT species FROM animals;
 
 BEGIN;
 DELETE FROM animals;
