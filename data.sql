@@ -30,8 +30,8 @@ UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smit
 
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell') WHERE name in ('Pikachu', 'Gabumon');
 
-UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') WHERE name in ('Devimon', 'Plantmon');
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob') WHERE name in ('Devimon', 'Plantmon');
 
-UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob') WHERE name in ('Charmander', 'Squirtle', 'Blossom');
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') WHERE name in ('Charmander', 'Squirtle', 'Blossom');
 
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Winchester') WHERE name in ('Angemon', 'Boarmon');
